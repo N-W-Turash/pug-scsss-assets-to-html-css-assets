@@ -1,0 +1,22 @@
+{
+  "name": "pug-scss-assets-to-html-css-assets",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "build-html": "pug templates -o outputs -P -w",
+    "build-css": "sass --watch stylings/scss/stylings.scss:outputs/stylings/css/stylings.css",
+    "build-assets": "node assets.js",
+    "start": "concurrently npm:build-*"
+  },
+  "keywords": [],
+  "author": "Turash",
+  "license": "ISC",
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "chokidar": "^2.1.0",
+    "fs-extra": "^7.0.1",
+    "npm": "^6.7.0",
+    "npm-run": "^5.0.1"
+  }
+}

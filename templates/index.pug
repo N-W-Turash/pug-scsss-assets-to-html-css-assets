@@ -1,0 +1,21 @@
+doctype html
+html
+  include includes/head.pug
+  body
+    include partials/header.pug
+
+    .container.pos-r-top
+      .row
+        .col-6
+          img.img-fluid(src="assets/imgs/media.jpg")
+        .col-6
+          .jumbotron
+            h1.display-4 Hello, world!
+            p.lead
+              | This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.
+            hr.my-4
+            p
+              | It uses utility classes for typography and spacing to space content out within the larger container.
+            a.btn.btn-primary.btn-lg(href='#', role='button') Learn more
+
+    include includes/foot.pug

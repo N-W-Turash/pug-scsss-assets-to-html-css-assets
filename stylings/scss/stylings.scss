@@ -1,0 +1,72 @@
+$header_font: 'Roboto Condensed',
+sans-serif;
+;
+$non_header_font: 'Open Sans',
+sans-serif;
+$default-font-weight: 400;
+html {
+    font-size: 1em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $header_font;
+    margin: 2.75rem 0 1rem;
+    font-weight: $default-font-weight;
+    line-height: 1.15;
+}
+
+p,
+article,
+header {
+    font-family: $non_header_font;
+}
+
+body {
+    background-color: white;
+    font-weight: $default-font-weight;
+    line-height: 1.45;
+}
+
+p {
+    margin-bottom: 1.25em;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 4.209em;
+}
+
+h2 {
+    font-size: 3.157em;
+}
+
+h3 {
+    font-size: 2.369em;
+}
+
+h4 {
+    font-size: 1.777em;
+}
+
+h5 {
+    font-size: 1.333em;
+}
+
+small,
+.text-small {
+    font-size: 0.75em;
+}
+
+h1 {
+    color: green;
+}
+
+.pos-r-top {
+    position: relative;
+    top: 20px;
+}
