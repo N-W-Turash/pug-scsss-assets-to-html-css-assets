@@ -24,24 +24,24 @@ fs.copy('assets', 'outputs/assets')
     .then(() => console.log('All assets have been built.'))
     .catch(err => console.error(err));
 
-const watcher = chokidar.watch('assets', {
-    persistent: true
-});
+// const watcher = chokidar.watch('assets', {
+//     persistent: true
+// });
 
-const log = console.log.bind(console);
-watcher
-    .on('changed', path => {
-        console.log('Added!');
-        console.log('path->', path);
-        fs.copy(path, 'outputs/assets')
-            .then(() => console.log('Done!'))
-            .catch(err => console.error(err));
-        // exec('npm run assets.js');
-        // makeCopy(`${path}`, `outputs/assets`, `File ${path} has been added.`);
-        // require('npm').command.run('build-assets', (err) => {console.log(err) });
-    })
-    // .on('changed', path => {
-    //     makeCopy(`${path}`, `outputs/assets`, `File ${path} has been changed.`);
-    // });
+// const log = console.log.bind(console);
+// watcher
+//     .on('changed', path => {
+//         console.log('Added!');
+//         console.log('path->', path);
+//         // fs.copy(path, 'outputs/assets')
+//         //     .then(() => console.log('Done!'))
+//         //     .catch(err => console.error(err));
+//         // exec('npm run assets.js');
+//         // makeCopy(`${path}`, `outputs/assets`, `File ${path} has been added.`);
+//         // require('npm').command.run('build-assets', (err) => {console.log(err) });
+//     })
+//     // .on('changed', path => {
+//     //     makeCopy(`${path}`, `outputs/assets`, `File ${path} has been changed.`);
+//     // });
 
 //     .on('unlink', path => log(`File ${path} has been removed`));
